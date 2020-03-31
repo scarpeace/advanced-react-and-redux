@@ -15,7 +15,11 @@ import Adapter from 'enzyme-adapter-react-16'
 Enzyme.configure({adapter: new Adapter()})`
   * e tem que se chamar setupTest.js criado na pasta SRC
 
+- Foi instalada uma dependência chamada moxios - Fica de olho no axios e ve se teve algum request. Ele não deixa o request ser finalizado
+    mas avisa o axios que deu tudo certo e dá uns dados pra ele trabalhar como resposta.
 
 [REDUX]
 
 - Adiciona Redux e React-Redux
+- Axios foi Instalado 
+- Foi instalada uma dependência chamada redux-promise - Async dentro do redux.

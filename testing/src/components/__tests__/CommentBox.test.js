@@ -2,22 +2,27 @@ import React from 'react'
 // Full-DOM \/
 import { mount } from 'enzyme'
 import 'setupTest'
+import Root from 'Root'
 import CommentBox from 'components/CommentBox'
 
 let wrapped;
 
 beforeEach(() => {
-  wrapped = mount(<CommentBox />)
-})
+  wrapped = mount(
+  <Root>
+    <CommentBox />
+  </Root>
+  );
+});
 
 // Quando vem um fullDom é necessário sempre fazer uma limpeza no sistema.
 afterEach(() => {
   wrapped.unmount();
 })
 
-it('has a text area and a button', () => {
+it('has a text area and two buttons', () => {
   expect(wrapped.find('textarea').length).toEqual(1)
-  expect(wrapped.find('button').length).toEqual(1)
+  expect(wrapped.find('button').length).toEqual(2)
 })
 
 describe('the text area', () => {
