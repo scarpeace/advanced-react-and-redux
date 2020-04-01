@@ -23,3 +23,8 @@ Enzyme.configure({adapter: new Adapter()})`
 - Adiciona Redux e React-Redux
 - Axios foi Instalado 
 - Foi instalada uma dependência chamada redux-promise - Async dentro do redux.
+
+
+[HIGHER_ORDER_COMPONENTS]
+
+- Instalamos o React Router e configuramos as rotas
