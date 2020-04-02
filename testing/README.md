@@ -28,3 +28,8 @@ Enzyme.configure({adapter: new Adapter()})`
 [HIGHER_ORDER_COMPONENTS]
 
 - Instalamos o React Router e configuramos as rotas
+
+  [MIDDLEWARE]
+
+- JSON Schema - Validator for json documents instalado! (yarn add tv4 (tiny validator 4))
+- jsonschema.net Tem um gerador de json schema pra validação de JSON

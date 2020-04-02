@@ -39,4 +39,5 @@ class CommentBox extends Component {
   }
 }
 
+// Double composing. Adding redux and RequireAuth.
 export default connect(null, actions)(requireAuth(CommentBox));
