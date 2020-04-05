@@ -1,9 +1,9 @@
 const passport = require('passport')
-const User = require('../models/user')
 const JwtStrategy = require('passport-jwt').Strategy
 const ExtractJwt = require('passport-jwt').ExtractJwt
-const config = require('../config')
 const LocalStrategy = require('passport-local')
+const config = require('../config')
+const User = require('../models/user')
 
 // Create Local Strategy
 const localOptions = {usernameField: 'email'};
@@ -30,7 +30,6 @@ const jwtOptions = {
   jwtFromRequest: ExtractJwt.fromHeader('authorization'),
   secretOrKey: config.secret
 };
-
 // Create JWT strategy
 // The first argument is the payload that is comming from the JWT. In our case is the user.id and the timestamp.
 const jwtLogin = new JwtStrategy(jwtOptions, function (payload, done) {

@@ -35,3 +35,8 @@ C:\Program Files\MongoDB\Server\4.0\bin\
 - `Passport - JWT` - Authenticating users with a JWT (JSON Web Tokes)(yarn add jwt-simple)
 - `Passport - Local` - Authenticating users with a username/password (yarn add passport passport-jwt)
 - `Passport-JS` - Authenticating users
+
+
+- *CORS*
+
+- O Cors serve para liberar o acesso à API para qualquer site. Tem como configurar ele para aceitar somente alguns requests.
