@@ -9,6 +9,7 @@ module.exports = (app) => {
   app.get('/', requireAuth, function (req, res) {
     res.send({ hi: 'there' })
   })
+  // TODO - Not Working
   app.post('/signin', requireSignIn, Authentication.signin)
   app.post('/signup', Authentication.signup);
 }
